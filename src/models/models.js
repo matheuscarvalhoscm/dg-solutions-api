@@ -1,10 +1,16 @@
 const conn = require('./connection');
 
+const serialize = (data) => ({
+    id: data.id,
+    name: data.name,
+    birthDate: data.birth_date,
+});
+
 const getAllRegisters = async () => {
   const [registers] = await conn.execute(
     'SELECT * FROM dg_solutions_challenge.registers'
   );
-  return registers;
+  return registers.map(serialize);
 };
 
 const addRegister = async (name, birthDate) => {
