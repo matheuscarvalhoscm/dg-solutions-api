@@ -17,8 +17,8 @@ const getAllRegisters = async () => {
 
 const addRegister = async (name, birthDate) => {
   const { error } = registerSchema.validate({ name, birthDate });
-  const newRegister = await Register.addRegister(name, birthDate);
   if (error) throw error;
+  const newRegister = await Register.addRegister(name, birthDate);
   
   return newRegister;
 };
