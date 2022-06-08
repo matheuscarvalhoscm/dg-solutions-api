@@ -6,10 +6,14 @@ const getAllRegisters = async (_req, res) => {
 };
 
 const addRegister = async (req, res) => {
-  const { name, birthDate } = req.body;
-  const newRegister = await Register.addRegister(name, birthDate);
-
-  return res.status(201).json(newRegister);
+  try {
+    const { name, birthDate } = req.body;
+    const newRegister = await Register.addRegister(name, birthDate);
+  
+    return res.status(201).json(newRegister);
+  } catch (error) {
+    return res.status(400).json(error.message);
+  }
 };
 
 module.exports = {
