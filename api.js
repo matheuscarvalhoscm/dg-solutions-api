@@ -13,4 +13,4 @@ app.use(cors({
 app.use(bodyParser.json());
 app.use('/', router);
 
-app.listen(PORT, () => console.log(`ouvindo na porta: ${PORT}`));
+app.listen(PORT, () => console.log(`Rodando na porta: ${PORT}`));
