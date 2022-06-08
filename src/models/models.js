@@ -14,10 +14,12 @@ const getAllRegisters = async () => {
 };
 
 const addRegister = async (name, birthDate) => {
-  conn.execute(
+  const [register] = await conn.execute(
     'INSERT INTO dg_solutions_challenge.registers (name, birth_date) VALUE (?, ?)',
     [name, birthDate],
-  )
+  );
+
+  return { id: register.insertId, name, birthDate };
 };
 
 module.exports = {
