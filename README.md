@@ -23,7 +23,7 @@ Para executar o projeto é importante que você tenha instalado as seguintes fer
 
 ~~~
 # clone o repositório
-git clone LINK DO REPOSITÓRIO
+git clone https://github.com/matheuscarvalhoscm/dg-solutions-api.git
 
 # acesse a pasta do servidor
 cd dg-solutions-api
