@@ -70,8 +70,8 @@ Insere uma nova pessoa no banco de dados. O corpo da requisição deve conter os
 
 ```json
 {
-  "name": "Nome da pessoa",
-  "birthDate": "Data de nascimento da pessoa" 
+  "name": "string",
+  "birthDate": "string no formato yyyy-mm-dd" 
 }
 ```
 
