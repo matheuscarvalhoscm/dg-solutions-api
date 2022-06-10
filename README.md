@@ -36,7 +36,7 @@ npm install
 # altere as variáveis de ambiente no arquivo `.env.example` para suas credenciais do mysql. após isso renomeie o arquivo para `.env`
 
 # subindo o servidor
-npm start
+npm run dev
 
 # O servidor inciará na porta:3003 - acesse http://localhost:3003
 ~~~
