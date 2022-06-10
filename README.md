@@ -31,7 +31,7 @@ cd dg-solutions-api
 # instale as dependências
 npm install
 
-# em seu terminal ou interface gráfica mysql, execute o script localizado em `src/scripts/seed.sql` para popular o banco de dados
+# em seu terminal ou interface gráfica (e.g.: MySQL Worbench), execute o script localizado em `src/scripts/seed.sql` para popular o banco de dados
 
 # altere as variáveis de ambiente no arquivo `.env.example` para suas credenciais do mysql. após isso renomeie o arquivo para `.env`
 
