@@ -19,7 +19,7 @@ Para executar o projeto é importante que você tenha instalado as seguintes fer
 * [Node.js](https://nodejs.org/en/)
 * [MySQL Server](https://dev.mysql.com/doc/refman/8.0/en/)
 
-### **🎲️ Rodando a interface**
+### **🎲️ Rodando o servidor**
 
 ~~~
 # clone o repositório
