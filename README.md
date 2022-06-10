@@ -46,7 +46,7 @@ npm run dev
 
 ### GET `/`
 
-Retorna a lista com todas as pessoas cadastras no banco de dados. 
+Retorna a lista com todas as pessoas cadastras no banco de dados:
 
 
 ```json
