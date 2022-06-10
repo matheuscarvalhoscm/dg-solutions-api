@@ -6,7 +6,7 @@
 
 ## 🖥 Sobre o projeto
 
-O projeto consiste em uma API para inserção e busca de informações de pessoas cadastras em um banco de dados MySQL.
+A aplicação consiste em uma API para inserção e busca de informações de pessoas cadastras em um banco de dados MySQL.
 
 ---
 
@@ -14,7 +14,7 @@ O projeto consiste em uma API para inserção e busca de informações de pessoa
 
 ## **Pré Requisitos**
 
-Para executar o projeto é importante que você tenha instalado as seguintes ferramentas em sua máquina:
+Para executar a aplicaçãoo é importante que você tenha instalado as seguintes ferramentas em sua máquina:
 
 * [Node.js](https://nodejs.org/en/)
 * [MySQL Server](https://dev.mysql.com/doc/refman/8.0/en/)
