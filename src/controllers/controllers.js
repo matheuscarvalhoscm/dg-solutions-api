@@ -8,8 +8,8 @@ const getAllRegisters = async (_req, res) => {
 
 const addRegister = async (req, res) => {
   try {
-    const { name, birthDate } = req.body;
-    const newRegister = await Register.addRegister(name, birthDate);
+    const { name, birthDate, email, tel } = req.body;
+    const newRegister = await Register.addRegister(name, birthDate, email, tel);
   
     return res.status(CREATED).json(newRegister);
   } catch (error) {

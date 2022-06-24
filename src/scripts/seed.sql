@@ -10,10 +10,12 @@ CREATE TABLE registers (
   id INT NOT NULL AUTO_INCREMENT,
   name VARCHAR(100) NOT NULL,
   birth_date DATE NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  tel VARCHAR(100) NOT NULL,
   PRIMARY KEY(id)
 );
 
 -- populate 'registers' table with two registers
 INSERT INTO registers (name, birth_date)
-VALUES('Ada Lovelace', '1957-12-10'),
-      ('Alan Turing', '1951-06-12');
+VALUES('Ada Lovelace', '1957-12-10', 'ada.lovelace@email.com', '12999999998'),
+      ('Alan Turing', '1951-06-12', 'alan.turing@email.com', '12999999997');

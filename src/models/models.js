@@ -13,10 +13,10 @@ const getAllRegisters = async () => {
   return registers.map(serialize);
 };
 
-const addRegister = async (name, birthDate) => {
+const addRegister = async (name, birthDate, email, tel) => {
   const [register] = await conn.execute(
-    'INSERT INTO dg_solutions_challenge.registers (name, birth_date) VALUE (?, ?)',
-    [name, birthDate],
+    'INSERT INTO dg_solutions_challenge.registers (name, birth_date, email, tel) VALUE (?, ?, ?, ?)',
+    [name, birthDate, email, tel],
   );
 
   return { id: register.insertId, name, birthDate };

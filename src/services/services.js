@@ -8,6 +8,12 @@ const registerSchema = Joi.object({
   birthDate: Joi.string().required().messages({
     'string.empty': 'O campo "Data de nascimento" não pode estar vazio.'
   }),
+  email: Joi.string().email().required().messages({
+    'string.empty': 'O campo "Email" não pode esta vazio.'
+  }),
+  tel: Joi.string().length(11).required().messages({
+    'string.empty': 'O campo "Telefone" não pode estar vazio.'
+  }),
 });
 
 const getAllRegisters = async () => {
@@ -15,10 +21,10 @@ const getAllRegisters = async () => {
   return registers;
 };
 
-const addRegister = async (name, birthDate) => {
-  const { error } = registerSchema.validate({ name, birthDate });
+const addRegister = async (name, birthDate, email, tel) => {
+  const { error } = registerSchema.validate({ name, birthDate, email, tel});
   if (error) throw error;
-  const newRegister = await Register.addRegister(name, birthDate);
+  const newRegister = await Register.addRegister(name, birthDate, email, tel);
   
   return newRegister;
 };
